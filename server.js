@@ -10,7 +10,7 @@ const upload = multer({ storage });
 
 app.use('/f', express.static(tmpDir));
 
-app.all('/', (req, res) => res.send(`<!DOCTYPE html>
+app.get('/', (req, res) => res.send(`<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
